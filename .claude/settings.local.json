@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test *)",
+      "Bash(npm run *)",
+      "Bash(node -e \"const {MessageChannel} = require\\('worker_threads'\\); console.log\\(typeof MessageChannel\\)\")",
+      "Bash(npx jest *)"
+    ]
+  }
+}

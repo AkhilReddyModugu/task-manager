@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1778392532869" clover="3.2.0">
+  <project timestamp="1778392532870" name="All files">
+    <metrics statements="203" coveredstatements="203" conditionals="55" coveredconditionals="55" methods="61" coveredmethods="61" elements="319" coveredelements="319" complexity="0" loc="203" ncloc="203" packages="5" files="13" classes="13"/>
+    <package name="src">
+      <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="App.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/App.tsx">
+        <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.__tests__">
+      <metrics statements="14" coveredstatements="14" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <file name="testUtils.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/__tests__/testUtils.tsx">
+        <metrics statements="14" coveredstatements="14" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="12" count="48" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="36" count="48" type="stmt"/>
+        <line num="42" count="48" type="stmt"/>
+        <line num="45" count="8" type="stmt"/>
+        <line num="53" count="8" type="stmt"/>
+        <line num="61" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="44" coveredstatements="44" conditionals="22" coveredconditionals="22" methods="15" coveredmethods="15"/>
+      <file name="EmptyState.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/components/EmptyState.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="29" type="stmt"/>
+      </file>
+      <file name="Header.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/components/Header.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="70" type="stmt"/>
+        <line num="15" count="70" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="ProtectedRoute.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/components/ProtectedRoute.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="17" type="stmt"/>
+        <line num="11" count="7" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="TaskCard.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/components/TaskCard.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="33" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+      </file>
+      <file name="TaskFilters.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/components/TaskFilters.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="67" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+      </file>
+      <file name="TaskForm.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/components/TaskForm.tsx">
+        <metrics statements="15" coveredstatements="15" conditionals="16" coveredconditionals="16" methods="5" coveredmethods="5"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="205" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="42" count="205" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="47" count="205" type="stmt"/>
+        <line num="51" count="6" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages">
+      <metrics statements="56" coveredstatements="56" conditionals="25" coveredconditionals="25" methods="15" coveredmethods="15"/>
+      <file name="DashboardPage.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/pages/DashboardPage.tsx">
+        <metrics statements="38" coveredstatements="38" conditionals="10" coveredconditionals="10" methods="10" coveredmethods="10"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="65" type="stmt"/>
+        <line num="22" count="117" type="stmt"/>
+        <line num="24" count="65" type="stmt"/>
+        <line num="25" count="65" type="stmt"/>
+        <line num="26" count="65" type="stmt"/>
+        <line num="28" count="65" type="stmt"/>
+        <line num="29" count="17" type="stmt"/>
+        <line num="33" count="65" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="65" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="40" count="65" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="45" count="65" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="49" count="65" type="stmt"/>
+        <line num="50" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+        <line num="59" count="65" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="64" count="65" type="stmt"/>
+        <line num="93" count="26" type="stmt"/>
+      </file>
+      <file name="LoginPage.tsx" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/pages/LoginPage.tsx">
+        <metrics statements="18" coveredstatements="18" conditionals="15" coveredconditionals="15" methods="5" coveredmethods="5"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="67" type="stmt"/>
+        <line num="17" count="67" type="stmt"/>
+        <line num="18" count="80" type="stmt"/>
+        <line num="20" count="67" type="stmt"/>
+        <line num="21" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="67" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="32" count="67" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store">
+      <metrics statements="74" coveredstatements="74" conditionals="3" coveredconditionals="3" methods="23" coveredmethods="23"/>
+      <file name="authSlice.ts" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/store/authSlice.ts">
+        <metrics statements="31" coveredstatements="31" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+        <line num="1" count="11" type="stmt"/>
+        <line num="2" count="11" type="stmt"/>
+        <line num="5" count="11" type="stmt"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="8" count="11" type="stmt"/>
+        <line num="16" count="11" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="11" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="37" count="6" type="stmt"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="45" count="11" type="stmt"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="48" count="5" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="53" count="4" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="65" count="11" type="stmt"/>
+        <line num="66" count="11" type="stmt"/>
+      </file>
+      <file name="store.ts" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/store/store.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="taskSlice.ts" path="/Users/akhilreddymodugu/Desktop/Mea-Tec Assignment/task-manager/src/store/taskSlice.ts">
+        <metrics statements="39" coveredstatements="39" conditionals="1" coveredconditionals="1" methods="16" coveredmethods="16"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="14" count="20" type="stmt"/>
+        <line num="15" count="20" type="stmt"/>
+        <line num="16" count="16" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="49" count="10" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="61" count="10" type="stmt"/>
+        <line num="66" count="10" type="stmt"/>
+        <line num="68" count="20" type="stmt"/>
+        <line num="69" count="20" type="stmt"/>
+        <line num="72" count="16" type="stmt"/>
+        <line num="73" count="16" type="stmt"/>
+        <line num="76" count="2" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="86" count="3" type="stmt"/>
+        <line num="87" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="93" count="2" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="101" count="10" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

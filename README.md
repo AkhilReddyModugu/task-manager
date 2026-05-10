@@ -4,7 +4,9 @@ A frontend-only task management application built with React, TypeScript, and a 
 
 ## Live Demo
 
-Deploy to Vercel or Netlify by connecting the repository. No backend required — all API responses are handled by MSW in the browser.
+> **[Live on Vercel →](https://task-manager-nu-dusky.vercel.app/)**
+
+No backend required — all API responses are intercepted by MSW in the browser. Log in with `test` / `test123`.
 
 ---
 
@@ -22,6 +24,7 @@ npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) and log in with:
+
 - **Username:** `test`
 - **Password:** `test123`
 
@@ -33,29 +36,29 @@ This app uses [Mock Service Worker (MSW)](https://mswjs.io/) to intercept HTTP r
 
 ### Service Worker setup
 
-`src/mocks/browser.ts` sets up the MSW browser worker. In `src/main.tsx`, the worker is started and **awaited** before the React app renders, ensuring every API call is intercepted from the first render:
+`src/mocks/browser.ts` sets up the MSW browser worker. In `src/main.tsx`, the worker is started and **awaited** before the React app renders, ensuring every API call is intercepted from the first render — in both development and production:
 
 ```ts
 async function enableMocking() {
-  if (import.meta.env.DEV) {
-    const { worker } = await import('./mocks/browser')
-    return worker.start({ onUnhandledRequest: 'bypass' })
-  }
+  const { worker } = await import('./mocks/browser')
+  return worker.start({ onUnhandledRequest: 'bypass' })
 }
 enableMocking().then(() => ReactDOM.render(...))
 ```
+
+The compiled `mockServiceWorker.js` lives in `public/` and is served by Vercel/Netlify as a static file, so the service worker registers correctly in production with no server-side changes needed.
 
 ### Mocked endpoints
 
 All handlers live in `src/mocks/handlers.ts`:
 
-| Method | Path | Description |
-|--------|------|-------------|
-| `POST` | `/api/login` | Validates credentials (`test` / `test123`) and returns a fake JWT |
-| `GET` | `/api/tasks` | Returns the task list from `localStorage` |
-| `POST` | `/api/tasks` | Creates a task, persists to `localStorage` |
-| `PUT` | `/api/tasks/:id` | Updates a task in `localStorage` |
-| `DELETE` | `/api/tasks/:id` | Removes a task from `localStorage` |
+| Method   | Path             | Description                                                       |
+| -------- | ---------------- | ----------------------------------------------------------------- |
+| `POST`   | `/api/login`     | Validates credentials (`test` / `test123`) and returns a fake JWT |
+| `GET`    | `/api/tasks`     | Returns the task list from `localStorage`                         |
+| `POST`   | `/api/tasks`     | Creates a task, persists to `localStorage`                        |
+| `PUT`    | `/api/tasks/:id` | Updates a task in `localStorage`                                  |
+| `DELETE` | `/api/tasks/:id` | Removes a task from `localStorage`                                |
 
 ### State persistence
 
@@ -117,29 +120,29 @@ src/
 
 ## Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start Vite dev server |
-| `npm run build` | TypeScript check + production build |
-| `npm run lint` | ESLint check |
-| `npm test` | Run Jest tests |
-| `npm run test:coverage` | Run tests with coverage report |
+| Command                 | Description                         |
+| ----------------------- | ----------------------------------- |
+| `npm run dev`           | Start Vite dev server               |
+| `npm run build`         | TypeScript check + production build |
+| `npm run lint`          | ESLint check                        |
+| `npm test`              | Run Jest tests                      |
+| `npm run test:coverage` | Run tests with coverage report      |
 
 ---
 
 ## Libraries Used
 
-| Category | Library |
-|----------|---------|
-| Framework | React 19 + Vite |
-| Language | TypeScript |
-| State | Redux Toolkit + React-Redux |
-| Routing | React Router DOM v7 |
-| Mock API | Mock Service Worker (MSW) v2 |
-| HTTP | Axios |
-| Forms | Formik + Yup |
-| UI | Ant Design v6 + Tailwind CSS v3 |
-| Testing | Jest 29 + React Testing Library + ts-jest |
+| Category  | Library                                   |
+| --------- | ----------------------------------------- |
+| Framework | React 19 + Vite                           |
+| Language  | TypeScript                                |
+| State     | Redux Toolkit + React-Redux               |
+| Routing   | React Router DOM v7                       |
+| Mock API  | Mock Service Worker (MSW) v2              |
+| HTTP      | Axios                                     |
+| Forms     | Formik + Yup                              |
+| UI        | Ant Design v6 + Tailwind CSS v3           |
+| Testing   | Jest 29 + React Testing Library + ts-jest |
 
 ---
 

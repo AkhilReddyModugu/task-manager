@@ -24,7 +24,7 @@ function App() {
       >
         <BrowserRouter>
           <Routes>
-            <Route path="/login" element={<LoginPage />} />
+            <Route path="/login" element={<LoginPage darkMode={darkMode} onToggleDark={toggleDark} />} />
             <Route
               path="/"
               element={

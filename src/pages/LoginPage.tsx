@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Form, Input, Button, Card, Alert } from 'antd'
+import { BulbOutlined, BulbFilled } from '@ant-design/icons'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { login } from '../store/authSlice'
@@ -12,7 +13,12 @@ const validationSchema = Yup.object({
   password: Yup.string().required('Password is required'),
 })
 
-export function LoginPage() {
+interface Props {
+  darkMode: boolean
+  onToggleDark: () => void
+}
+
+export function LoginPage({ darkMode, onToggleDark }: Props) {
   const dispatch = useDispatch<AppDispatch>()
   const navigate = useNavigate()
   const { isAuthenticated, loading, error } = useSelector((state: RootState) => state.auth)
@@ -31,6 +37,14 @@ export function LoginPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-950 px-4">
+      <Button
+        type="text"
+        icon={darkMode ? <BulbFilled className="text-yellow-400" /> : <BulbOutlined />}
+        onClick={onToggleDark}
+        aria-label="Toggle dark mode"
+        className="fixed top-4 right-4 text-gray-600 dark:text-gray-300"
+      />
+
       <Card className="w-full max-w-sm shadow-lg">
         <div className="text-center mb-6">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white m-0">Task Manager</h1>
